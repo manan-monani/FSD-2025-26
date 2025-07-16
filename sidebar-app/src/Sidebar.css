@@ -1,0 +1,35 @@
+.sidebar {
+  width: 0;
+  background-color: #2d2d5d;
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: 0.3s;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  width: 220px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.sidebar nav a:hover {
+  color: #a970ff;
+}
